@@ -1,12 +1,16 @@
+require 'pry'
+
 class Queue
 attr_reader :count
 
   def initialize
-    @count = 0
+    @queue = []
+    @queue_count = 0
   end
 
   def count_record
-
+    binding.pry
+    @queue << @queue_count +=1
   end
 
 end
